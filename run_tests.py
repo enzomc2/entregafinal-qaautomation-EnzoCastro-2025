@@ -13,5 +13,3 @@ test_files = [
 pytest_args = test_files + ["--html=report.html","--self-contained-html","-v"]
 
 pytest.main(pytest_args)
-
-

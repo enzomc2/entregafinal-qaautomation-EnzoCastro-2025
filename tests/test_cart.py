@@ -26,6 +26,7 @@ def test_cart(login_in_driver,usuario,password):
         cartPage = CartPage(driver)
         
         productos_en_carrito = cartPage.obtener_productos_carrito()
+        
         assert len(productos_en_carrito) == 50
         #assert False, "Fallo de prueba forzado"
 

@@ -1,12 +1,9 @@
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 import pytest 
-
 from utils.datos import leer_csv_login
 from pages.login_page import LoginPage
-
 from utils.logger import logger
-
 
 @pytest.mark.parametrize("usuario,password,debe_funcionar",leer_csv_login("datos/data_login.csv"))
 def test_login_validation(login_in_driver,usuario,password,debe_funcionar):

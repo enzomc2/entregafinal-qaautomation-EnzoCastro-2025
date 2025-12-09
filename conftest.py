@@ -28,10 +28,6 @@ def login_in_driver(driver):
 def url_base():
     return "https://reqres.in/api/users"
 
-@pytest.fixture
-def header_request():
-    return {"x-api-key": "reqres-free-v1"}
-
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item,call):
     outcome = yield

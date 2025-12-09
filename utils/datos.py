@@ -12,4 +12,3 @@ def leer_csv_login(ruta_archivo):
 
             datos.append((fila["usuario"], fila["password"], debe_funcionar))
     return datos
-
